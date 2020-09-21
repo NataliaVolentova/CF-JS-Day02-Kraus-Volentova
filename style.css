@@ -1,4 +1,4 @@
-h1{
+body{
 	text-align: center;
 }
 .img{
@@ -8,20 +8,23 @@ h1{
 	justify-content: space-between;
 	}	
 
-	.img img{
-		width: 20%;
+	img{
+		width: 40%;
 	}
 
-@media screen (max-width: 781px){
+@media only screen and (max-width: 781px){
 	.img{
 	display: flex;
-	
 	flex-direction: column;
 	align-items: center;
-	}	
+	}
+	img
+	{
+		width: 100%
+	}
 }
 
-@media screen (min-width: 780px){
+@media only screen and (min-width: 780px){
 	.img{
 	display: flex;
 	flex-basis: 100%;
@@ -29,8 +32,8 @@ h1{
 	justify-content: space-between;
 	}	
 
-	.img img{
-		width: 20%;
+	img{
+		width: 40%;
 	}
 }
 
